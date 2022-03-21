@@ -20,7 +20,7 @@ jobs:
       - name: Run Trivy
         uses: aquasecurity/trivy-action@master
         with:
-          scan-type: 'fs'
+          scan-type: 'image'
           ignore-unfixed: true
           format: 'sarif'
           output: 'trivy-results.sarif'
